@@ -11,8 +11,14 @@ interface BlogsProps {
 export function Blogs({ data }: BlogsProps) {
   return (
     <div className="grid lg:grid-cols-3 gap-[100px]">
-      {data.map((blog) => {
-        return <Cards title={blog.title} description={blog.description} />;
+      {data.map((blog, index) => {
+        return (
+          <Cards
+            key={index}
+            title={blog.title}
+            description={blog.description}
+          />
+        );
       })}
     </div>
   );
