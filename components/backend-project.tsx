@@ -13,16 +13,17 @@ import {
 import { HeroHighlight, Highlight } from "./ui/hero-highlight";
 import { motion } from "framer-motion";
 import { SparklesCore } from "./ui/sparkles";
+import { Boxes } from "./ui/background-boxes";
 
 export function BackendProjects() {
   return (
-    <section className="lg:m-32 m-10 " id="back-end">
-      <div className="h-full relative w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+    <section className="lg:m-32 m-10" id="back-end">
+      <div className="h-full relative w-full bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md">
         <Highlight className="text-black p-2 my-2 lg:p-7 lg:m-10 font-sans lg:text-2xl dark:text-white">
           BACKEND PROJECTS
         </Highlight>
 
-        <BentoGrid className="max-w-4xl my-20 mx-auto">
+        <BentoGrid className="max-w-4xl my-10  mx-auto">
           {items.map((item, i) => (
             <BentoGridItem
               key={i}
@@ -32,6 +33,7 @@ export function BackendProjects() {
               icon={item.icon}
               github={item.github}
               live={item.live}
+              tech={item.tech}
               className={i === 3 || i === 6 ? "md:col-span-2" : ""}
             />
           ))}
@@ -45,12 +47,24 @@ const Skeleton = () => (
 );
 const items = [
   {
+    title: "URL Shortener",
+    description:
+      "Created a lightning fast URL Shortener with Nextjs and implemented caching using Redis and Message queues Kafka for asynchronously sending E-mails.",
+    header: <Skeleton />,
+    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    github: "https://github.com/mohdjami/url-shortener",
+    tech: "Nextjs, Redis, Kafka, Prisma, Postgres, Typescript",
+    live: "https://mjkm.vercel.app",
+  },
+  {
     title: "Scalable Real Time Chat App",
     description:
-      "Built a highly scalable real time chat application using websockets, Nodejs and Nextjs with robust and scalable backend architecture which can handle thousands of users.",
+      "Built a highly scalable real time chat application using websockets, Nodejs and Nextjs with robust and scalable backend architecture.",
     header: <Skeleton />,
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/RealChat-Scalable-WebSockets",
+    tech: "Nextjs, Websockets, Nodejs Redis, Kafka, Prisma, Postgres, Typescript",
+
     live: "",
   },
   {
@@ -60,6 +74,7 @@ const items = [
     header: <Skeleton />,
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/file-sharing",
+    tech: "Nodejs, Express, Mongoose, Multer, JWT, MongoDB",
     live: "",
   },
   {
@@ -69,6 +84,7 @@ const items = [
     header: <Skeleton />,
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/first-npm-package",
+    tech: "Nodejs, NPM",
     live: "",
   },
   {
@@ -78,6 +94,7 @@ const items = [
     header: <Skeleton />,
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/Chat-Room",
+    tech: "Python, Django, Sql, WebSockets",
     live: "",
   },
   {
@@ -87,6 +104,7 @@ const items = [
     header: <Skeleton />,
     icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/notes-app",
+    tech: "Nodejs, Jest, Prisma, Supabase",
     live: "",
   },
   {
@@ -95,6 +113,8 @@ const items = [
     header: <Skeleton />,
     icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/Todo-CI-CD",
+    tech: "Jenkins, CI/CD, Nodejs Redis, Kafka, Prisma, Postgres, Typescript",
+    live: "",
   },
   {
     title: "Library Management",
@@ -102,6 +122,8 @@ const items = [
     header: <Skeleton />,
     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/FastAPI-Library-Management",
+    tech: "Python, FastAPI, MongoDB, PyMongo",
+    live: "",
   },
   {
     title: "Nodejs-Prisma Auth Template",
@@ -110,5 +132,7 @@ const items = [
     header: <Skeleton />,
     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/Nodejs-Prisma",
+    tech: "Nodejs, Prisma, Prisma, MongoDB",
+    live: "",
   },
 ];

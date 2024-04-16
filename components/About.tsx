@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <footer className="bg-transparent text-white py-12">
+    <footer className="bg-transparent z-10 text-white py-12">
       <div className="lg:max-w-7xl mx-auto px-4 grid items-center md:grid-cols-2 lg:grid-cols-4 sm:grid-cols-1  gap-8">
         <div>
           <h5 className="font-bold text-lg mb-4 lg:text-left text-center">

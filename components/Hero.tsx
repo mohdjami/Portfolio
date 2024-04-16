@@ -176,7 +176,7 @@ export function Hero() {
                     duration: 0.5,
                     ease: [0.4, 0.0, 0.2, 1],
                   }}
-                  className="text-2xl bg-transparent md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-7xl leading-relaxed lg:leading-snug text-left mx-auto "
+                  className="text-xl ml-6 bg-transparent md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-7xl leading-relaxed lg:leading-snug text-left mx-auto "
                 >
                   <Highlight className="text-black dark:text-white">
                     I love to share my process of building applications and
@@ -184,7 +184,15 @@ export function Hero() {
                   </Highlight>
                 </motion.h1>
               </HeroHighlight>
-              <Blogs data={blogs} />
+              <Blogs data={blogs} />{" "}
+              <div className="flex m-10 space-x-10">
+                <Link
+                  href="/blogs"
+                  className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+                >
+                  See all Articles
+                </Link>
+              </div>
             </section>
             <section>
               <HeroHighlight>
@@ -201,7 +209,7 @@ export function Hero() {
                     duration: 0.5,
                     ease: [0.4, 0.0, 0.2, 1],
                   }}
-                  className="text-2xl text-left  bg-transparent md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-7xl leading-relaxed lg:leading-snug mx-auto "
+                  className="text-xl text-left ml-6  bg-transparent md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-7xl leading-relaxed lg:leading-snug mx-auto "
                 >
                   <Highlight className="text-black text-left dark:text-white">
                     Some of my Open Source Project to get started with!

@@ -3,7 +3,7 @@ import React from "react";
 
 const Frontend = () => {
   return (
-    <div>
+    <div className="lg:mt-10 mt-20 h-full">
       <FrontendProjects />
     </div>
   );

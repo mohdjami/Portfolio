@@ -3,7 +3,7 @@ import React from "react";
 
 const Other = () => {
   return (
-    <div>
+    <div className="lg:mt-10 mt-20 h-full">
       <OtherProjects />
     </div>
   );

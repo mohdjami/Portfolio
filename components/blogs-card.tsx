@@ -1,5 +1,6 @@
 import React from "react";
 import { EvervaultCard, Icon } from "./ui/evervault-card";
+import { Card } from "./ui/card";
 interface Blog {
   title: string;
   description: string;
@@ -26,7 +27,7 @@ export function Blogs({ data }: BlogsProps) {
 
 export function Cards({ title, description }: Blog) {
   return (
-    <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start lg:w-100 w-72 lg:max-w-sm mx-auto p-4 relative h-[30rem]">
+    <Card className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start lg:w-[350px] w-56  mx-auto p-4 relative lg:h-[30rem]">
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
@@ -40,6 +41,6 @@ export function Cards({ title, description }: Blog) {
       <p className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
         {title}
       </p>
-    </div>
+    </Card>
   );
 }
