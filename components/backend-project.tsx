@@ -63,9 +63,22 @@ const items = [
     header: <Skeleton />,
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/RealChat-Scalable-WebSockets",
-    tech: "Nextjs, Websockets, Nodejs Redis, Kafka, Prisma, Postgres, Typescript",
+    tech: "Nextjs, Websockets, Nodejs, Redis, Kafka, Prisma, Postgres, Typescript",
     live: "",
   },
+  {
+    title: "Habit Tracker",
+    description:
+      "Monitor your activities, streaks, and progress with little effort. Integrate statistics to your life! ",
+    header: <Skeleton />,
+    image: "/Screenshot 2024-02-15 211545.png",
+
+    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+    github: "https://github.com/mohdjami/habit-tracker-app",
+    tech: "Next.js, Prisma, Supabase, Shadcn, Tailwind Css",
+    live: "htts://habit-tracker-jami.vercel.app",
+  },
+
   {
     title: "File Sharing Web App",
     description:
@@ -81,10 +94,22 @@ const items = [
     description:
       "This is my first npm package to view my resume and connect to me",
     header: <Skeleton />,
+    image: "/npm.png",
+
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/first-npm-package",
     tech: "Nodejs, NPM",
     live: "",
+  },
+  {
+    title: "Student Task Management System",
+    description:
+      "The system provides endpoints for both an Admin Panel and a Student Interface with various features such as admin login, student login,and manipulating tasks.",
+    header: <Skeleton />,
+    icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
+    github: "https://github.com/mohdjami/Student-Task-Management-System",
+    tech: "Nodejs, Express, Typescript, Mongodb, Nextjs, Prisma ",
+    live: "https://student-management-system-beta.vercel.app/",
   },
   {
     title: "Chat Room",

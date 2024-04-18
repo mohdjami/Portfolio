@@ -54,55 +54,40 @@ const items = [
     tech: "Nextjs, Redis, Kafka, Prisma, Postgres, Typescript",
     live: "https://mjkm.vercel.app",
   },
+
   {
-    title: "Scalable Real Time Chat App",
+    title: "Favourite Tunes",
     description:
-      "Built a highly scalable real time chat application using websockets, Nodejs and Nextjs with robust and scalable backend architecture.",
+      "With our app, you can explore new music, create playlists, and share your favourite tunes with friends. Get started today!  ",
     header: <Skeleton />,
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
-    github: "https://github.com/mohdjami/RealChat-Scalable-WebSockets",
-    tech: "Nextjs, Websockets, Nodejs Redis, Kafka, Prisma, Postgres, Typescript",
-    live: "",
-  },
-  {
-    title: "File Sharing Web App",
-    description:
-      "Developed a file sharing web application using Node.js, Express, and Mongoose. ",
-    header: <Skeleton />,
+    image: "/fav.png",
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
-    github: "https://github.com/mohdjami/file-sharing",
-    tech: "Nodejs, Express, Mongoose, Multer, JWT, MongoDB",
-    live: "",
+    github: "https://github.com/mohdjami/favourite-tunes",
+    tech: "Next.js, Nodejs, Postgres, Prisma ",
+    live: "https://favourite-tunes.vercel.app/",
   },
   {
-    title: "Connect with me NPM Package",
+    title: "Habit Tracker",
     description:
-      "This is my first npm package to view my resume and connect to me",
+      "Monitor your activities, streaks, and progress with little effort. Integrate statistics to your life! ",
     header: <Skeleton />,
+    image: "/Screenshot 2024-02-15 211545.png",
+
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
-    github: "https://github.com/mohdjami/first-npm-package",
+    github: "https://github.com/mohdjami/habit-tracker-app",
     tech: "Nodejs, NPM",
-    live: "",
+    live: "htts://habit-tracker-jami.vercel.app",
   },
+
   {
-    title: "Chat Room",
+    title: "Student Task Management System",
     description:
-      "Asynchronous Web Socket Chat application Built using Django Framework.",
-    image: "/chatroom.png",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
-    github: "https://github.com/mohdjami/Chat-Room",
-    tech: "Python, Django, Sql, WebSockets",
-    live: "",
-  },
-  {
-    title: "Notes Management and sharing",
-    description:
-      "It is a notes creating, sharing, searching app with unit tests, rate limiting and authentication.",
+      "The system provides endpoints for both an Admin Panel and a Student Interface with various features such as admin login, student login, adding students, assigning tasks, viewing assigned tasks, and updating task status.",
     header: <Skeleton />,
     icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
-    github: "https://github.com/mohdjami/notes-app",
-    tech: "Nodejs, Jest, Prisma, Supabase",
-    live: "",
+    github: "https://github.com/mohdjami/Student-Task-Management-System",
+    tech: "nodejs, express, typescript, mongodb nextjs prisma ",
+    live: "https://student-management-system-beta.vercel.app/",
   },
   {
     title: "Todo CI/CD",
@@ -111,25 +96,6 @@ const items = [
     icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/Todo-CI-CD",
     tech: "Jenkins, CI/CD, Nodejs Redis, Kafka, Prisma, Postgres, Typescript",
-    live: "",
-  },
-  {
-    title: "Library Management",
-    description: "Built a library management API leveraging FastAPI framework.",
-    header: <Skeleton />,
-    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
-    github: "https://github.com/mohdjami/FastAPI-Library-Management",
-    tech: "Python, FastAPI, MongoDB, PyMongo",
-    live: "",
-  },
-  {
-    title: "Nodejs-Prisma Auth Template",
-    description:
-      "Nodejs and prisma Authentication and authorization template using Mongodb and JWT.",
-    header: <Skeleton />,
-    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
-    github: "https://github.com/mohdjami/Nodejs-Prisma",
-    tech: "Nodejs, Prisma, Prisma, MongoDB",
     live: "",
   },
 ];

@@ -5,13 +5,13 @@ import { Boxes } from "@/components/ui/background-boxes";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { dashboardLinks } from "@/config/links";
 
-interface DashboardLayoutProps {
+interface ProjectDashboardLayoutProps {
   children: React.ReactNode;
 }
 
-export default async function DashboardLayout({
+export default async function ProjectDashboardLayout({
   children,
-}: DashboardLayoutProps) {
+}: ProjectDashboardLayoutProps) {
   return (
     <div className=" w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex flex-cols min-h-full">
       {" "}

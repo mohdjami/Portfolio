@@ -63,7 +63,7 @@ export const TracingBeam = ({
                 ? "none"
                 : "rgba(0, 0, 0, 0.24) 0px 3px 8px",
           }}
-          className="ml-[27px] mt-[100px] h-4 w-4 rounded-full border border-netural-200 shadow-sm flex items-center justify-center"
+          className="ml-[27px] mt-[100px] h-4 w-4 rounded-full border border-netural-600 shadow-sm flex items-center justify-center"
         >
           <motion.div
             transition={{
@@ -72,9 +72,9 @@ export const TracingBeam = ({
             }}
             animate={{
               backgroundColor:
-                scrollYProgress.get() > 0 ? "white" : "var(--emerald-500)",
+                scrollYProgress.get() > 0 ? "white" : "var(--red-500)",
               borderColor:
-                scrollYProgress.get() > 0 ? "white" : "var(--emerald-600)",
+                scrollYProgress.get() > 0 ? "white" : "var(--red-600)",
             }}
             className="h-2 w-2  rounded-full border border-neutral-300 bg-white"
           />
@@ -90,7 +90,7 @@ export const TracingBeam = ({
           <motion.path
             d={`M 1 0V -36 l 18 24 V ${svgHeight * 0.8} l -18 24V ${svgHeight}`}
             fill="none"
-            stroke="#9091A0"
+            stroke="red-6"
             strokeOpacity="0.16"
             transition={{
               duration: 10,
@@ -115,10 +115,10 @@ export const TracingBeam = ({
               y1={y1} // set y1 for gradient
               y2={y2} // set y2 for gradient
             >
-              <stop stopColor="#18CCFC" stopOpacity="0"></stop>
-              <stop stopColor="#18CCFC"></stop>
-              <stop offset="0.325" stopColor="#6344F5"></stop>
-              <stop offset="1" stopColor="#AE48FF" stopOpacity="0"></stop>
+              <stop stopColor="red" stopOpacity="0"></stop>
+              <stop stopColor="red"></stop>
+              <stop offset="0.325" stopColor="red-700"></stop>
+              <stop offset="1" stopColor="red-700" stopOpacity="0"></stop>
             </motion.linearGradient>
           </defs>
         </svg>

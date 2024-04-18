@@ -84,7 +84,7 @@ export function Hero() {
     },
     {
       text: "Applications",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-red-500 dark:text-red-500",
     },
     // {
     //   text: "Aceternity.",

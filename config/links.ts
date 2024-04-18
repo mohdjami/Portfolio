@@ -10,28 +10,28 @@ export const dashboardLinks: Navigation = {
     {
       title: "Projects",
       href: "/projects",
-      icon: "dashboard",
+      icon: "check",
     },
     {
       title: "Backend Projects",
       href: "/projects/back-end",
-      icon: "settings",
+      icon: "fire",
     },
     {
       title: "Full Stack Projects",
       href: "/projects/full-stack",
-      icon: "activity",
+      icon: "sort",
     },
 
     {
       title: "Front-End Projects",
       href: "/projects/front-end",
-      icon: "settings",
+      icon: "mixer",
     },
     {
       title: "Other Projects",
       href: "/projects/other-end",
-      icon: "settings",
+      icon: "ellipsis",
     },
   ],
 };
