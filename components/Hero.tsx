@@ -115,12 +115,12 @@ export function Hero() {
                 </div>
                 <div className="hidden lg:block">
                   <div className="flex items-left justify-center space-x-6">
-                    <button className="flex bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-3 py-3">
+                    <button className="flex bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-3 font-sans font-bold py-3">
                       Know More About Me <ArrowBigRight />
                     </button>
                     <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                       <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                      <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                      <span className="inline-flex font-sans font-bold h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm  text-white backdrop-blur-3xl">
                         Read my Blogs
                       </span>
                     </button>
@@ -141,86 +141,57 @@ export function Hero() {
                 </div>
               </div>
               <div className="grid lg:h-[40rem] w-full mb-10 bg-transparent  gap-10 lg:flex flex-col items-center justify-center overflow-hidden rounded-md ">
-                <h1 className="md:text-4xl space-y-10 text-3xl space-x-10 lg:text-6xl font-bold text-center text-white relative lg:z-20">
-                  Mohd Jami
-                  <div className="flex space-x-4  mx-32 w-full md:text-4xl text-3xl lg:text-6xl font-bold text-center text-white relative lg:z-20">
-                    <Link
-                      href="https://github.com/mohdjami"
-                      className="md:text-4xl text-3xl lg:text-6xl font-bold text-center text-white relative lg:z-20"
-                    >
-                      {" "}
-                      <LiaGithub className="text-bold text-white" />
-                    </Link>
-                    <Link
-                      href="https://linkedin.com/in/mohdjami"
-                      className="md:text-4xl text-3xl lg:text-6xl font-bold text-center text-white relative lg:z-20"
-                    >
-                      <LiaLinkedin className="text-bold text-white" />
-                    </Link>
-                  </div>
+                <h1 className="flex gap-1 md:text-4xl space-y-10 text-3xl space-x-10 lg:text-6xl font-bold text-center text-white relative lg:z-20">
+                  Mohd &nbsp;
+                  <h1 className="md:text-4xl space-y-10 text-3xl space-x-10 lg:text-6xl font-bold text-center text-red-500 relative lg:z-20">
+                    {" "}
+                    Jami{" "}
+                  </h1>
                 </h1>
+                <div className="flex">
+                  {" "}
+                  <Link
+                    href="https://github.com/mohdjami"
+                    className="md:text-4xl text-3xl lg:text-6xl font-bold text-center text-white relative lg:z-20"
+                  >
+                    {" "}
+                    <LiaGithub className="text-bold text-white" />
+                  </Link>
+                  <Link
+                    href="https://linkedin.com/in/mohdjami"
+                    className="md:text-4xl text-3xl lg:text-6xl font-bold text-center text-white relative lg:z-20"
+                  >
+                    <LiaLinkedin className="text-bold text-white" />
+                  </Link>
+                </div>
               </div>
             </section>
-            <section>
-              <HeroHighlight>
-                <motion.h1
-                  initial={{
-                    opacity: 0,
-                    y: 20,
-                  }}
-                  animate={{
-                    opacity: 1,
-                    y: [20, -5, 0],
-                  }}
-                  transition={{
-                    duration: 0.5,
-                    ease: [0.4, 0.0, 0.2, 1],
-                  }}
-                  className="text-xl ml-6 bg-transparent md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-7xl leading-relaxed lg:leading-snug text-left mx-auto "
-                >
-                  <Highlight className="text-black dark:text-white">
-                    I love to share my process of building applications and
-                    knowledge through my Blogs.
-                  </Highlight>
-                </motion.h1>
-              </HeroHighlight>
+            <section className="m-20 items-start grid justify-center">
+              <div className="text-xl text-center  ml-6  bg-transparent md:text-2xl lg:text-3xl font-bold border border-slate-800 p-4 text-neutral-700 dark:text-white max-w-7xl leading-relaxed lg:leading-snug m-10">
+                {" "}
+                I love to share my process of Building Applications and
+                Knowledge through my Blogs.{" "}
+              </div>
               <Blogs data={blogs} />{" "}
-              <div className="flex m-10 space-x-10">
+              <div className="flex mt-10 space-x-10">
                 <Link
                   href="/blogs"
-                  className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+                  className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000000,45%,#FF0000,10%,#000000)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
                 >
                   See all Articles
                 </Link>
               </div>
             </section>
-            <section>
-              <HeroHighlight>
-                <motion.h1
-                  initial={{
-                    opacity: 0,
-                    y: 20,
-                  }}
-                  animate={{
-                    opacity: 1,
-                    y: [20, -5, 0],
-                  }}
-                  transition={{
-                    duration: 0.5,
-                    ease: [0.4, 0.0, 0.2, 1],
-                  }}
-                  className="text-xl text-left ml-6  bg-transparent md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-7xl leading-relaxed lg:leading-snug mx-auto "
-                >
-                  <Highlight className="text-black text-left dark:text-white">
-                    Some of my Open Source Project to get started with!
-                  </Highlight>
-                </motion.h1>
-              </HeroHighlight>
+            <section className="m-20 items-start grid justify-center">
+              <div className="text-xl text-center  bg-transparent md:text-2xl lg:text-3xl font-bold border border-slate-800 p-4 text-neutral-700 dark:text-white max-w-7xl leading-relaxed lg:leading-snug m-10">
+                Some of my Open Source Project to get started with!
+              </div>
+
               <ProjectCards />
-              <div className="flex m-10 space-x-10">
+              <div className="flex mt-10 space-x-10">
                 <Link
                   href="/projects"
-                  className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+                  className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000000,90%,#FF0000,10%,#000000)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
                 >
                   Explore all projects
                 </Link>

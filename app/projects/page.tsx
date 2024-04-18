@@ -18,14 +18,15 @@ import { Highlight } from "@/components/ui/hero-highlight";
 import { PinContainer } from "@/components/ui/3d-pin";
 import Link from "next/link";
 import { TracingBeam } from "@/components/ui/tracing-beam";
+import Image from "next/image";
 const Hello = () => {
   return (
     <section className="lg:m-32 mt-32 " id="back-end">
       <TracingBeam>
         <div className="h-full relative w-full bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md">
-          <Highlight className="text-black p-2 my-2 lg:p-7 lg:m-10 font-sans lg:text-2xl dark:text-white">
+          <div className="text-black lg:mt-10 font-bold font-sans lg:text-4xl dark:text-white">
             Selection of My Favourite Projects
-          </Highlight>
+          </div>
           <div className="grid lg:grid-cols-2">
             <div className="h-[40rem] w-[320px] lg:w-full flex items-center justify-center">
               <Link href="https://mjkm.vercel.app">
@@ -33,7 +34,7 @@ const Hello = () => {
                   title="URL Shortener"
                   href="https://twitter.com/mannupaaji"
                 >
-                  <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[200px] lg:w-[20rem] h-[20rem] ">
+                  <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[200px] lg:w-[20rem] h-[30rem] lg:h-[20rem] ">
                     <h3 className="max-w-xs !pb-2 !m-0 font-bold  lg:text-base text-slate-100">
                       URL Shortener
                     </h3>
@@ -42,7 +43,21 @@ const Hello = () => {
                         Highly Scalable URL Shortener with Nextjs, Redis, Kafka.
                       </span>
                     </div>
-                    <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
+                    <div className="flex flex-1 w-full rounded-lg mt-4 " />
+                    <Image
+                      src="/url.png"
+                      alt="My URL shortener Website"
+                      width={500}
+                      height={500}
+                      className="hidden lg:block"
+                    />
+                    <Image
+                      src="/urlph.png"
+                      alt="My URL shortener Website"
+                      width={300}
+                      height={300}
+                      className="lg:hidden"
+                    />
                   </div>
                 </PinContainer>
               </Link>
@@ -53,7 +68,7 @@ const Hello = () => {
                   title="Habit Tracker"
                   href="https://habit-tracker-jami.vercel.app"
                 >
-                  <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[200px] lg:w-[20rem] h-[20rem] ">
+                  <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[200px] lg:w-[20rem] h-[30rem] lg:h-[20rem] ">
                     <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
                       Habit Tracker
                     </h3>
@@ -64,7 +79,21 @@ const Hello = () => {
                         little effort. Integrate statistics to your life!
                       </span>
                     </div>
-                    <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
+                    <div className="flex flex-1 w-full rounded-lg mt-4 " />
+                    <Image
+                      src="/Screenshot 2024-02-15 211545.png"
+                      alt="My Portfolio Website"
+                      width={500}
+                      height={500}
+                      className="hidden lg:block"
+                    />
+                    <Image
+                      src="/hbtph.png"
+                      alt="My Portfolio Website"
+                      width={300}
+                      height={300}
+                      className="lg:hidden"
+                    />
                   </div>
                 </PinContainer>
               </Link>
@@ -75,7 +104,7 @@ const Hello = () => {
                   title="Next.js Auth Template"
                   href="https://jami-nextjs-auth-temp.vercel.app/"
                 >
-                  <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[200px] lg:w-[20rem] h-[20rem] ">
+                  <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[200px] lg:w-[20rem] h-[30rem] lg:h-[22rem] ">
                     <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
                       Next.js Authentication Starter Template
                     </h3>
@@ -88,7 +117,21 @@ const Hello = () => {
                         applicationss
                       </span>
                     </div>
-                    <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
+                    <div className="flex flex-1 w-full rounded-lg mt-4 " />
+                    <Image
+                      src="/nextauth.png"
+                      alt="My nextauth shortener Website"
+                      width={400}
+                      height={400}
+                      className="hidden lg:block"
+                    />
+                    <Image
+                      src="/nextauthph.png"
+                      alt="My nextauth  Website"
+                      width={300}
+                      height={300}
+                      className="lg:hidden"
+                    />
                   </div>
                 </PinContainer>
               </Link>
@@ -99,7 +142,7 @@ const Hello = () => {
                   title="My Portfolio Website"
                   href="https://portfolio-mohdjamis-projects.vercel.app/"
                 >
-                  <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[200px] lg:w-[20rem] h-[20rem] ">
+                  <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2  w-[200px] lg:w-[20rem] h-[30rem] lg:h-[22rem] ">
                     <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
                       My Portfolio Website
                     </h3>
@@ -111,7 +154,21 @@ const Hello = () => {
                         about me.
                       </span>
                     </div>
-                    <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
+                    <div className="flex flex-1 w-full rounded-lg mt-4 " />
+                    <Image
+                      src="/port.png"
+                      alt="My nextauth shortener Website"
+                      width={500}
+                      height={500}
+                      className="hidden lg:block"
+                    />
+                    <Image
+                      src="/portph.png"
+                      alt="My nextauth  Website"
+                      width={300}
+                      height={300}
+                      className="lg:hidden"
+                    />
                   </div>
                 </PinContainer>
               </Link>

@@ -18,9 +18,9 @@ export function FrontendProjects() {
     <section className="lg:m-32 m-10" id="front-end">
       {" "}
       <div className="h-full relative w-full bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md">
-        <Highlight className="text-black p-2 m-2 lg:p-7 lg:m-10 font-sans lg:text-2xl dark:text-white">
+        <div className="text-black lg:mt-10 font-bold font-sans lg:text-4xl dark:text-white">
           FRONTEND PROJECTS
-        </Highlight>
+        </div>
       </div>
       <BentoGrid className="max-w-4xl m-10 mx-auto">
         {items.map((item, i) => (
@@ -28,7 +28,7 @@ export function FrontendProjects() {
             key={i}
             title={item.title}
             description={item.description}
-            header={item.header}
+            image={item.image}
             icon={item.icon}
             github={item.github}
             live={item.live}
@@ -48,7 +48,7 @@ const items = [
     title: "URL Shortener",
     description:
       "Created a lightning fast URL Shortener with Nextjs and implemented caching using Redis and Message queues Kafka for asynchronously sending E-mails.",
-    header: <Skeleton />,
+    image: "/url.png",
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/url-shortener",
     tech: "Nextjs, Redis, Kafka, Prisma, Postgres, Typescript",
@@ -62,7 +62,6 @@ const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/RealChat-Scalable-WebSockets",
     tech: "Nextjs, Websockets, Nodejs Redis, Kafka, Prisma, Postgres, Typescript",
-
     live: "",
   },
   {
@@ -89,7 +88,7 @@ const items = [
     title: "Chat Room",
     description:
       "Asynchronous Web Socket Chat application Built using Django Framework.",
-    header: <Skeleton />,
+    image: "/chatroom.png",
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/Chat-Room",
     tech: "Python, Django, Sql, WebSockets",
