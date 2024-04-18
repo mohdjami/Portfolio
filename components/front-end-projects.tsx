@@ -66,6 +66,15 @@ const items = [
     live: "htts://habit-tracker-jami.vercel.app",
   },
   {
+    title: "My Portfolio",
+    description: "This project is currently in building phase.",
+    image: "/port.png",
+    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    github: "https://github.com/mohdjami/portfolio",
+    tech: "Nextjs, Shadcn-ui, Tailwind css",
+    live: "https://mohdjami.me/",
+  },
+  {
     title: "Card Solution",
     description: "A landing page for ModeUI application and an Admin Panel.",
     image: "/cardsol.png",
